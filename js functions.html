@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+        const pi=3.14;
+
+        console.log("List of available functions :");
+        console.log("01. add(1st value,2nd value,3rd value)  //Add three numbers from variables in console ");
+        console.log("02. mean(1st value,2nd value,3rd value)  //Check mean of three numbers");
+        console.log("03. bYear(age)  //Calculate year from age");
+        console.log("04. rectArea(length,breadth)  //Calculate area of rectangle");
+        console.log("05. sqArea(length of side)  //Calculate area of square");
+        console.log("06. circArea(radius)  //Calculate area of circle");
+        console.log("07. rectPeri(length,breadth) //Calculate perimeter of rectangle");
+        console.log("08. sqPeri(length of side)  //Calculate perimeter of square");
+        console.log("09. circumference(radius)  //Calculatecircumference of circle");
+        console.log("10. bmi(weight in kg,height in meters)  //Calculating bmi");
+        console.log("11. f2c(temperature in °F)  //Converting temperature (°F to °C)");
+        console.log("12. m2km(distance in miles)  //converting miles to km");
+        
+        
+    
+
+        function add(x=0,y=0,z=0) //sum of three numbers
+        {
+            console.log("Sum of the entered numbers is :");
+            return (x+y+z) ;
+        }
+
+
+        function mean(x=0,y=0,z=0)  //mean of three numbers 
+        {
+            console.log("Mean of the entered numbers is :");
+            return ((x+y+z)/3);
+        }
+
+
+        function bYear(age=0)  //calculating birth year from age
+        {
+            console.log("Birth year as per entered age is :");
+            return (2024-age);
+        }
+
+
+        function rectArea(l=0,b=0)  //area of rectangle
+        {
+            console.log("Area of the rectangle is :");
+            return ((l*b)+ " sq units");
+        }
+
+
+        function sqArea(s=0)  //area of square
+        {
+            console.log("Area of the sqaure is :");
+            return ((s*s) + " sq units");
+        }
+        
+        
+        function circArea(r=0)  //area of circle
+        {
+            console.log("Area of the circle is :");
+            return (((pi*r*r).toFixed(2)) + " sq units");
+
+        }
+
+
+        function rectPeri(l=0,b=0) //perimeter of rectangle
+        {
+            console.log("Perimeter of the rectangle is :");
+            return ((2*(l+b)) + " units");
+        }
+
+
+        function sqPeri(s=0)  //perimeter of square
+        {
+            console.log("Perimeter of the square is :");
+            return ((4*s) + " units");
+        }
+
+
+        function circumference(r=0)  //circumference of circle
+        {
+            console.log("Circumference of the circle is :");
+            return ((2*pi*r) + " units");
+        }
+
+        
+        function bmi(w=0,h=0)  //calculating bmi
+        {
+            console.log("Your BMI is :");
+            return (w/(h*h)).toFixed(2);
+        }
+
+
+        function f2c(f=0)  //converting temperature (F to C)
+         {
+            console.log("Temperature =");          
+             var c = ((f-32)*(5/9)).toFixed(1);
+             return (c + " °C");
+
+         }
+
+         function m2km(m=0)  //converting miles to km
+        {
+            console.log(" Distance =");
+            return ((m*1.609) + " km");
+        }
+
+        
+
+    </script>
+</body>
+</html>
